@@ -1,0 +1,4 @@
+= Readme for Ui Generator
+
+== Bower
+``` bower install --save <module-name>```
