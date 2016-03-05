@@ -10,6 +10,7 @@
         });
 
         var vm = {};
+
         vm.loadAll = function () {
             return UiConfig.query();
         };
