@@ -1,10 +1,12 @@
 (function () {
 
+    'use strict';
+
     var injectParams = ['$resource', "URLS"];
 
     var factory = function ($resource, URLS) {
 
-        var UiConfig = $resource(URLS.api.uiconfig, {}, {
+        var UiConfig = $resource(URLS.api.ui_config, {}, {
             get: {method: 'GET', params: {name: '@name'}},
             create: {method: 'POST', params: {}}
         });

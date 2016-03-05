@@ -1,5 +1,7 @@
 (function () {
 
+    'use strict';
+
     var injectParams = ['uiSpecificationService'];
 
     var controller = function (uiSpecificationService) {

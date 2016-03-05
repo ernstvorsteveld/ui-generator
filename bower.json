@@ -1,7 +1,7 @@
 {
   "name": "ui-generator",
   "authors": [
-    "Ernst Vorsteveld <ernst.vorsteveld@iwelcome.com>"
+    "Ernst Vorsteveld <ernst.vorsteveld@gmail.com>"
   ],
   "description": "Ui Generator",
   "main": "index.html",
@@ -12,14 +12,13 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "e2e"
   ],
   "dependencies": {
-    "angular-bootstrap": "~1.2.2",
-    "angular": "~1.5.0",
-    "angular-route": "~1.5.0",
-    "angular-resource": "~1.5.0",
-    "angular-mocks": "~1.5.0"
+    "angular": "~1.4.8",
+    "angular-ui-bootstrap": "0.14.3",
+    "angular-route" :"1.4.8",
+    "angular-mocks" : "1.4.8",
+    "angular-resource" : "1.4.8"
   }
 }

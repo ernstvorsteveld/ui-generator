@@ -1,10 +1,12 @@
 (function () {
 
+    'use strict';
+
     var app = angular.module('app', ['ngRoute', 'ngResource']);
 
     app.constant("URLS", {
         "api": {
-            "uiconfig": '/api/ui/config/:name'
+            "ui_config": '/api/ui/config/:name'
         }
     });
 
