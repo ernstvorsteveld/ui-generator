@@ -2,3 +2,39 @@
 
 == Bower
 ``` bower install --save <module-name>```
+
+=== Run with mock backend in browser
+
+Add to index.html:
+
+```
+<script src="../bower_components/angular-mocks/angular-mocks.js"></script>
+<script src="main/main-controller.js"></script>
+```
+
+=== Run with mock backend in jasmine/karma tests
+
+```
+beforeEach(function () {
+    module('app');
+});
+
+beforeEach(inject(function (_$httpBackend_, uiSpecificationService) {
+    $httpBackend = _$httpBackend_;
+    service = uiSpecificationService;
+}));
+
+afterEach(function () {
+    $httpBackend.verifyNoOutstandingExpectation();
+    $httpBackend.verifyNoOutstandingRequest();
+});
+```
+
+And in the test:
+
+```
+var data = service.load('name');
+$httpBackend.flush();
+dump(data.toJSON());
+expect(data.toJSON().name).toBe("name.2");
+```

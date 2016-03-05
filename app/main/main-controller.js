@@ -7,7 +7,7 @@
     var controller = function (uiSpecificationService) {
         var vm = {};
 
-        vm.specs = uiSpecificationService.load("ui");
+        vm.specs = uiSpecificationService.load("name");
 
         return vm;
     };

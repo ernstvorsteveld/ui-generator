@@ -5,10 +5,10 @@ describe('Ui Specification service', function () {
     var service;
 
     beforeEach(function () {
-        angular.mock.module('app');
+        module('app');
     });
 
-    beforeEach(angular.mock.inject(function (_$httpBackend_, uiSpecificationService) {
+    beforeEach(inject(function (_$httpBackend_, uiSpecificationService) {
         $httpBackend = _$httpBackend_;
         service = uiSpecificationService;
     }));
