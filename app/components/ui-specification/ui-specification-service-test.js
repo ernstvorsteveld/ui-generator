@@ -30,6 +30,7 @@ describe('Ui Specification service', function () {
         $httpBackend.whenGET('/api/ui/config/name').respond(function (method, url, data, headers) {
             var spec = {
                 'id': 1,
+                'type' : 'text',
                 'name': 'name.2',
                 'subject': 'subject.2',
                 'message': 'message.2',

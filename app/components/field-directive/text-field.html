@@ -1,0 +1,19 @@
+<label for="{{field.name}}-{{field.id}}" class="control-label">{{field.prompt}}</label>
+<div class="input-group" ng-class="{required: field.required}">
+    <span class="input-group-addon">
+        <i class="fa fa-user"></i>
+    </span>
+
+    <input type="text" class="form-control" ng-class="{error: field.errors.empty}"
+           ng-model="field.property"
+           value="{{field.fieldValue}}" ng-required="{{field.required}}"
+           ng-disabled="{{field.disabled}}" placeholder="{{field.placeHolder}}"
+           id="input-{{field.fieldId}}" />
+
+    <span class="input-group-btn iw-tooltip">
+        <button type="button" class="btn btn-default" data-toggle="tooltip"
+                data-placement="top" title="{{field.tooltip}}">
+            <i class="fa fa-question"></i>
+        </button>
+    </span>
+</div>
