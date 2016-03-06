@@ -57,6 +57,19 @@
                 'tooltip' : 'tooltip text 4'
             },
             {
+                'id': 31,
+                'name': 'lastname',
+                'prompt' : 'Lastname for demo',
+                'required': true,
+                'errors': {
+                    'empty' : 'Lastname must have a value'
+                },
+                'property' : 'property.name.4a',
+                'placeHolder' : 'the placeholder text 4a',
+                'disable' : false,
+                'tooltip' : 'tooltip text 4a'
+            },
+            {
                 'id': 4,
                 'name': 'nickname',
                 'prompt' : 'Nickname',
