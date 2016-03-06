@@ -8,9 +8,9 @@ describe('Ui Specification service', function () {
         module('app');
     });
 
-    beforeEach(inject(function (_$httpBackend_, uiSpecificationService) {
+    beforeEach(inject(function (_$httpBackend_, UiSpecificationService) {
         $httpBackend = _$httpBackend_;
-        service = uiSpecificationService;
+        service = UiSpecificationService;
     }));
 
     afterEach(function () {
@@ -22,7 +22,6 @@ describe('Ui Specification service', function () {
         expectByName();
         var data = service.load('name');
         $httpBackend.flush();
-        dump(data.toJSON());
         expect(data.toJSON().name).toBe("name.2");
     });
 

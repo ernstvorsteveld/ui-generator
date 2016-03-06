@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var injectParams = ['uiSpecificationService', '$scope'];
+    var injectParams = ['UiSpecificationService', '$scope'];
 
     var controller = function (uiSpecificationService, $scope) {
 

@@ -6,7 +6,8 @@
 
     app.constant("URLS", {
         "api": {
-            "ui_config": '/api/ui/config/:name'
+            "ui_config": '/api/ui/config/:name',
+            "users" : "/api/users/:id"
         }
     });
 

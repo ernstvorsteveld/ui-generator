@@ -25,6 +25,6 @@
     };
 
     factory.$inject = injectParams;
-    angular.module('app').factory('uiSpecificationService', factory);
+    angular.module('app').factory('UiSpecificationService', factory);
 
 })();
