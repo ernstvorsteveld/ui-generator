@@ -38,10 +38,10 @@
                 'errors': {
                     'empty' : 'Middlename must have a value'
                 },
-                'property' : 'property.name.2',
-                'placeHolder' : 'the placeholder text 2',
+                'property' : 'property.name.3',
+                'placeHolder' : 'the placeholder text 3',
                 'disable' : false,
-                'tooltip' : 'tooltip text 2'
+                'tooltip' : 'tooltip text 3'
             },
             {
                 'id': 3,
@@ -51,10 +51,10 @@
                 'errors': {
                     'empty' : 'Lastname must have a value'
                 },
-                'property' : 'property.name.3',
-                'placeHolder' : 'the placeholder text 3',
+                'property' : 'property.name.4',
+                'placeHolder' : 'the placeholder text 4',
                 'disable' : false,
-                'tooltip' : 'tooltip text 3'
+                'tooltip' : 'tooltip text 4'
             },
             {
                 'id': 4,
@@ -64,10 +64,10 @@
                 'errors': {
                     'empty' : 'Nickname must have a value'
                 },
-                'property' : 'property.name.4',
-                'placeHolder' : 'the placeholder text 4',
+                'property' : 'property.name.5',
+                'placeHolder' : 'the placeholder text 5',
                 'disable' : true,
-                'tooltip' : 'tooltip text 4'
+                'tooltip' : 'tooltip text 5'
             }]
     };
 
