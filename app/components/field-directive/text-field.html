@@ -4,16 +4,11 @@
         <i class="fa fa-user"></i>
     </span>
 
-    <input type="text" class="form-control" ng-class="{error: field.errors.empty}"
-           ng-model="field.property"
-           value="{{field.fieldValue}}" ng-required="{{field.required}}"
-           ng-disabled="{{field.disabled}}" placeholder="{{field.placeHolder}}"
-           id="input-{{field.fieldId}}" />
+    <input id="input-{{field.fieldId}}"
+           type="text" class="form-control" ng-class="{error: field.errors.empty}"
+           ng-model="model"
+           ng-required="{{field.required}}" ng-value="field.property"
 
-    <span class="input-group-btn iw-tooltip">
-        <button type="button" class="btn btn-default" data-toggle="tooltip"
-                data-placement="top" title="{{field.tooltip}}">
-            <i class="fa fa-question"></i>
-        </button>
-    </span>
+           ng-disabled="{{field.disable | requiredFilter}}" placeholder="{{field.placeHolder}}"
+           title="{{field.tooltip}}"/>
 </div>

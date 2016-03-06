@@ -13,7 +13,7 @@
     app.config(['$routeProvider', "URLS", function ($routeProvider) {
         $routeProvider
             .when('/main', {
-                controller: 'mainController',
+                controller: 'MainController',
                 templateUrl: 'main/main.html',
                 controllerAs: 'main'
             })

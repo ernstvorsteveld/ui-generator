@@ -31,7 +31,7 @@
                 'tooltip' : 'tooltip text 2'
             },
             {
-                'id': 1,
+                'id': 2,
                 'name': 'middlename',
                 'prompt' : 'Middlename',
                 'required': true,
@@ -44,7 +44,7 @@
                 'tooltip' : 'tooltip text 2'
             },
             {
-                'id': 2,
+                'id': 3,
                 'name': 'lastname',
                 'prompt' : 'Lastname',
                 'required': true,
@@ -57,7 +57,7 @@
                 'tooltip' : 'tooltip text 3'
             },
             {
-                'id': 3,
+                'id': 4,
                 'name': 'nickname',
                 'prompt' : 'Nickname',
                 'required': true,
@@ -66,7 +66,7 @@
                 },
                 'property' : 'property.name.4',
                 'placeHolder' : 'the placeholder text 4',
-                'disable' : false,
+                'disable' : true,
                 'tooltip' : 'tooltip text 4'
             }]
     };

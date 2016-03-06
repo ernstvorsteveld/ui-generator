@@ -2,8 +2,6 @@
 
     'use strict';
 
-    var app = angular.module('app');
-
     var fieldDirective = function ($http, $compile) {
 
         var getTemplateUrl = function (field) {
@@ -31,12 +29,15 @@
             restrict: 'A',
             scope: {
                 field: '=',
-                formname: '='
+                form: '=',
+                valueField: '=',
+                model: '='
             },
             link: linker
         };
     };
 
+    var app = angular.module('app');
     app.directive('fieldDirective', fieldDirective);
 
 }());
