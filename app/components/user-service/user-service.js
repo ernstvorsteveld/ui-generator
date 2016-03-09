@@ -8,11 +8,15 @@
 
         var vm = {};
 
-        vm.getById = function(id) {
+        vm.getById = function (id) {
             return UserFactory.getById(id);
         };
 
-        vm.save = function(user) {
+        vm.getAll = function() {
+            return UserFactory.loadAll();
+        };
+
+        vm.save = function (user) {
             return UserFactory.save();
         };
 

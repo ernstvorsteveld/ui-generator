@@ -5,28 +5,28 @@
     var data = {
         "users": [
             {
-                'id': 1,
+                'id': "1",
                 'name': 'FirstName1',
                 'first_name': 'FirstName1',
                 'middle_name': 'MiddleName1',
                 'last_name': 'LastName1'
             },
             {
-                'id': 2,
+                'id': "2",
                 'name': 'FirstName2',
                 'first_name': 'FirstName2',
                 'middle_name': 'MiddleName2',
                 'last_name': 'LastName2'
             },
             {
-                'id': 3,
+                'id': "3",
                 'name': 'FirstName3',
                 'first_name': 'FirstName3',
                 'middle_name': 'MiddleName3',
                 'last_name': 'LastName3'
             },
             {
-                'id': 4,
+                'id': "4",
                 'name': 'FirstName4',
                 'first_name': 'FirstName4',
                 'middle_name': 'MiddleName4',
@@ -35,23 +35,25 @@
     };
 
     vm.getData = function() {
-        return vm.data.users;
+        return data.users;
     };
 
     vm.getById = function (id) {
+        var userFound = {};
         angular.forEach(vm.getData(), function (user) {
-            if (user.id == id) {
-                return user;
+            if (user.id === id) {
+                console.log("found user: " + user);
+                userFound = user;
             }
         });
-        return "";
+        return userFound;
     };
 
     angular.module('app').run(function ($httpBackend) {
         $httpBackend.whenGET(/^\/api\/users\/\w+$/).respond(function (method, url, data, headers) {
-            var regex = /^\/api\/user\/(\w+)/g;
+            var regex = /^\/api\/users\/(\w+)/g;
             var id = regex.exec(url)[1]; // First match on the second item.
-            var user = vm.getData(id);
+            var user = vm.getById(id);
             return [200, user];
         });
 

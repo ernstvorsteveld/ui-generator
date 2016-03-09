@@ -12,9 +12,22 @@
                 'errors': {
                     'empty' : 'Firstname must have a value'
                 },
-                'property' : 'property.name.1',
+                'property' : 'first_name',
                 'placeHolder' : 'the placeholder text 1',
                 'disable' : 'disabled',
+                'tooltip' : 'tooltip text 1'
+            },
+            {
+                'id': 10,
+                'name': 'name',
+                'prompt' : 'Name',
+                'required': true,
+                'errors': {
+                    'empty' : 'Firstname must have a value'
+                },
+                'property' : 'name',
+                'placeHolder' : 'the placeholder text name',
+                'disable' : 'enabled',
                 'tooltip' : 'tooltip text 1'
             },
             {
@@ -25,62 +38,23 @@
                 'errors': {
                     'empty' : 'Middlename must have a value'
                 },
-                'property' : 'property.name.2',
+                'property' : 'middle_name',
                 'placeHolder' : 'the placeholder text 2',
                 'disable' : false,
                 'tooltip' : 'tooltip text 2'
             },
             {
                 'id': 2,
-                'name': 'middlename',
-                'prompt' : 'Middlename',
-                'required': true,
-                'errors': {
-                    'empty' : 'Middlename must have a value'
-                },
-                'property' : 'property.name.3',
-                'placeHolder' : 'the placeholder text 3',
-                'disable' : false,
-                'tooltip' : 'tooltip text 3'
-            },
-            {
-                'id': 3,
                 'name': 'lastname',
                 'prompt' : 'Lastname',
                 'required': true,
                 'errors': {
                     'empty' : 'Lastname must have a value'
                 },
-                'property' : 'property.name.4',
+                'property' : 'last_name',
                 'placeHolder' : 'the placeholder text 4',
                 'disable' : false,
                 'tooltip' : 'tooltip text 4'
-            },
-            {
-                'id': 31,
-                'name': 'lastname',
-                'prompt' : 'Lastname for demo',
-                'required': true,
-                'errors': {
-                    'empty' : 'Lastname must have a value'
-                },
-                'property' : 'property.name.4a',
-                'placeHolder' : 'the placeholder text 4a',
-                'disable' : false,
-                'tooltip' : 'tooltip text 4a'
-            },
-            {
-                'id': 4,
-                'name': 'nickname',
-                'prompt' : 'Nickname',
-                'required': true,
-                'errors': {
-                    'empty' : 'Nickname must have a value'
-                },
-                'property' : 'property.name.5',
-                'placeHolder' : 'the placeholder text 5',
-                'disable' : true,
-                'tooltip' : 'tooltip text 5'
             }]
     };
 
@@ -96,7 +70,6 @@
     vm.getData = function (name) {
         return data;
     };
-
 
     angular.module('app').run(function ($httpBackend) {
         $httpBackend.whenGET(/^\/api\/ui\/config\/\w+$/).respond(function (method, url, data, headers) {

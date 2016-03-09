@@ -30,7 +30,6 @@
             scope: {
                 field: '=',
                 form: '=',
-                valueField: '=',
                 model: '='
             },
             link: linker

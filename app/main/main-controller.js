@@ -2,22 +2,21 @@
 
     'use strict';
 
-    var injectParams = ['UiSpecificationService', '$scope'];
+    var injectParams = ['UiSpecificationService', '$scope', 'UserService'];
 
-    var controller = function (uiSpecificationService, $scope) {
+    var controller = function (UiSpecificationService, $scope, UserService) {
 
         var vm = {};
-        vm.model = {
-        };
+        vm.model = {};
 
-        vm.specs = uiSpecificationService.load("name");
-        vm.specs.$promise.then(function(data) {
-            angular.forEach(data.templates, function(spec) {
-                vm.model[spec.property] = spec.property;
-            });
-        });
+        vm.specs = UiSpecificationService.load("name");
 
-        vm.save = function() {
+        vm.model = UserService.getById("1");
+
+        vm.save = function () {
+            console.log("specs");
+            console.log(vm.specs);
+            console.log("model");
             console.log(vm.model);
         };
 

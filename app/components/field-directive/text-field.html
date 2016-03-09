@@ -7,7 +7,7 @@
     <input id="input-{{field.fieldId}}"
            type="text" class="form-control" ng-class="{error: field.errors.empty}"
            ng-model="model"
-           ng-required="{{field.required}}" ng-value="field.property"
+           ng-required="{{field.required}}"
 
            ng-disabled="{{field.disable | requiredFilter}}" placeholder="{{field.placeHolder}}"
            title="{{field.tooltip}}"/>
