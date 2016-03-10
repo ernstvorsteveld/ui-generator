@@ -31,6 +31,19 @@
                 'tooltip' : 'tooltip text 1'
             },
             {
+                'id': 10,
+                'name': 'name',
+                'prompt' : 'Name',
+                'required': true,
+                'errors': {
+                    'empty' : 'Firstname must have a value'
+                },
+                'property' : 'middle_name',
+                'placeHolder' : 'the placeholder text name',
+                'disable' : 'enabled',
+                'tooltip' : 'tooltip text 1'
+            },
+            {
                 'id': 1,
                 'name': 'middlename',
                 'prompt' : 'Middlename',
