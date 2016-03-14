@@ -10,7 +10,7 @@
                 'first_name': 'FirstName1',
                 'middle_name': 'MiddleName1',
                 'last_name': 'LastName1',
-                'status': 'GRACE'
+                'status': 'DEMO1'
             },
             {
                 'id': "2",

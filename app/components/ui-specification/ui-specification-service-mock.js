@@ -91,6 +91,10 @@
                     {
                         'code': 'DELETED',
                         'value': 'DELETED'
+                    },
+                    {
+                        'code': 'DEMO1',
+                        'value': 'DEMO1'
                     }
                 ],
                 'required': true,
