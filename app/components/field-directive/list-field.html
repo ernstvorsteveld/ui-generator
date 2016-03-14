@@ -1,0 +1,15 @@
+<label for="{{field.name}}" data-translate="{{field.label}}"
+       id="{{pageId}}-label-{{attributeName}}{{field.name}}{{field.index}}">{{field.prompt}}</label>
+<div class="input-group" ng-class="{required: field.required}">
+    <span class="input-group-addon">
+        <i class="{{field.icon}}"></i>
+    </span>
+    <select ng-model="model" name="select-{{field.name}}"
+            data-ng-required="field.required"
+            id="{{pageId}}-select-{{attributeName}}{{field.name}}{{field.index}}" class="form-control">
+        <option data-ng-repeat="option in field.options" data-ng-selected="model == option.value"
+            value="{{option.code}}">
+            {{option.value}}
+        </option>
+    </select>
+</div>

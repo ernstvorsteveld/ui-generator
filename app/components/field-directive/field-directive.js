@@ -9,8 +9,10 @@
             switch (type) {
                 case 'text':
                     return 'components/field-directive/text-field.html';
+                case 'list':
+                    return 'components/field-directive/list-field.html';
                 default:
-                    return 'components/field-directive/text-field.html';
+                    return console.log("Type not recognized!");
             }
         };
 

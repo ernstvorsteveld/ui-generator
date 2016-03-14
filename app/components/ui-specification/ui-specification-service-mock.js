@@ -7,67 +7,100 @@
             {
                 'id': 0,
                 'name': 'firstname',
-                'prompt' : 'Firstname',
+                'type': 'text',
+                'prompt': 'Firstname',
                 'required': true,
                 'errors': {
-                    'empty' : 'Firstname must have a value'
+                    'empty': 'Firstname must have a value'
                 },
-                'property' : 'first_name',
-                'placeHolder' : 'the placeholder text 1',
-                'disable' : 'disabled',
-                'tooltip' : 'tooltip text 1'
+                'property': 'first_name',
+                'placeHolder': 'the placeholder text 1',
+                'disable': 'disabled',
+                'tooltip': 'tooltip text 1'
             },
             {
                 'id': 10,
                 'name': 'name',
-                'prompt' : 'Name',
+                'type': 'text',
+                'prompt': 'Name',
                 'required': true,
                 'errors': {
-                    'empty' : 'Firstname must have a value'
+                    'empty': 'Firstname must have a value'
                 },
-                'property' : 'name',
-                'placeHolder' : 'the placeholder text name',
-                'disable' : 'enabled',
-                'tooltip' : 'tooltip text 1'
+                'property': 'name',
+                'placeHolder': 'the placeholder text name',
+                'disable': 'enabled',
+                'tooltip': 'tooltip text 1'
             },
             {
-                'id': 10,
+                'id': 13,
                 'name': 'name',
-                'prompt' : 'Name',
+                'type': 'text',
+                'prompt': 'Name',
                 'required': true,
                 'errors': {
-                    'empty' : 'Firstname must have a value'
+                    'empty': 'Firstname must have a value'
                 },
-                'property' : 'middle_name',
-                'placeHolder' : 'the placeholder text name',
-                'disable' : 'enabled',
-                'tooltip' : 'tooltip text 1'
+                'property': 'middle_name',
+                'placeHolder': 'the placeholder text name',
+                'disable': 'enabled',
+                'tooltip': 'tooltip text 1'
             },
             {
                 'id': 1,
                 'name': 'middlename',
-                'prompt' : 'Middlename',
+                'type': 'text',
+                'prompt': 'Middlename',
                 'required': true,
                 'errors': {
-                    'empty' : 'Middlename must have a value'
+                    'empty': 'Middlename must have a value'
                 },
-                'property' : 'middle_name',
-                'placeHolder' : 'the placeholder text 2',
-                'disable' : false,
-                'tooltip' : 'tooltip text 2'
+                'property': 'middle_name',
+                'placeHolder': 'the placeholder text 2',
+                'disable': false,
+                'tooltip': 'tooltip text 2'
             },
             {
                 'id': 2,
                 'name': 'lastname',
-                'prompt' : 'Lastname',
+                'type': 'text',
+                'prompt': 'Lastname',
                 'required': true,
                 'errors': {
-                    'empty' : 'Lastname must have a value'
+                    'empty': 'Lastname must have a value'
                 },
-                'property' : 'last_name',
-                'placeHolder' : 'the placeholder text 4',
-                'disable' : false,
-                'tooltip' : 'tooltip text 4'
+                'property': 'last_name',
+                'placeHolder': 'the placeholder text 4',
+                'disable': false,
+                'tooltip': 'tooltip text 4'
+            },
+            {
+                'id': 20,
+                'name': 'status',
+                'type': 'list',
+                'prompt': 'status',
+                'options': [
+                    {
+                        'code': 'ACTIVE',
+                        'value': 'ACTIVE'
+                    },
+                    {
+                        'code': 'GRACE',
+                        'value': 'GRACE'
+                    },
+                    {
+                        'code': 'DELETED',
+                        'value': 'DELETED'
+                    }
+                ],
+                'required': true,
+                'errors': {
+                    'empty': 'Status must have a value.'
+                },
+                'property': 'status',
+                'placeHolder': 'the placeholder text for status',
+                'disable': false,
+                'tooltip': 'tooltip text for status'
             }]
     };
 
