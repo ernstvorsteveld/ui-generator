@@ -2,7 +2,7 @@
 
     var vm = {};
 
-    var data = {
+    var editUserSpec = {
         "templates": [
             {
                 'id': 0,
@@ -108,8 +108,36 @@
             }]
     };
 
+    var listUserSpec = {
+        "template": {
+            "name": "list of users.",
+            "fields": [
+                {
+                    "header": {
+                        "prompt": "First name"
+                    },
+                    "data": {
+                        "property": "first_name"
+                    }
+                },
+                {
+                    "header": {
+                        "prompt": "Last name"
+                    },
+                    "data": {
+                        "property": "last_name"
+                    }
+                }
+            ]
+        }
+    };
+
     vm.getData = function (name) {
-        return data;
+        if(name == "edit_user") {
+            return editUserSpec;
+        } else if(name == "list_user") {
+            return listUserSpec;
+        }
     };
 
     angular.module('app').run(function ($httpBackend) {

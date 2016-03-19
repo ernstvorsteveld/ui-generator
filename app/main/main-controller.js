@@ -9,7 +9,7 @@
         var vm = {};
         vm.model = {};
 
-        vm.specs = UiSpecificationService.load("name");
+        vm.specs = UiSpecificationService.load("edit_user");
 
         vm.model = UserService.getById("1");
 
