@@ -108,15 +108,6 @@
             }]
     };
 
-    vm.getData1 = function (name) {
-        for (var i = 0; i < data.length; i++) {
-            if (data[i].name === name) {
-                return data[i];
-            }
-        }
-        return {};
-    };
-
     vm.getData = function (name) {
         return data;
     };

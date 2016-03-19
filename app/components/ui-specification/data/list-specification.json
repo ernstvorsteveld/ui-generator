@@ -1,0 +1,23 @@
+{
+  "template": {
+    "name": "list of users.",
+    "fields": [
+      {
+        "header": {
+          "prompt": "First name"
+        },
+        "data": {
+          "property": "first_name"
+        }
+      },
+      {
+        "header": {
+          "prompt": "Last name"
+        },
+        "data": {
+          "property": "last_name"
+        }
+      }
+    ]
+  }
+}
