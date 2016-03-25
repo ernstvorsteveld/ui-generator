@@ -9,7 +9,7 @@ Add to index.html:
 
 ```
 <script src="../bower_components/angular-mocks/angular-mocks.js"></script>
-<script src="main/main-controller.js"></script>
+<script src="main/edit-controller.js"></script>
 ```
 
 === Run with mock backend in jasmine/karma tests

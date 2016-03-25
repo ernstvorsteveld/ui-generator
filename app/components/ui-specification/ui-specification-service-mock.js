@@ -107,25 +107,28 @@
                 'tooltip': 'tooltip text for status'
             }]
     };
-
     var listUserSpec = {
         "template": {
             "name": "list of users.",
             "fields": [
                 {
                     "header": {
-                        "prompt": "First name"
+                        "prompt": "First name",
+                        "type": "header"
                     },
                     "data": {
-                        "property": "first_name"
+                        "property": "first_name",
+                        "type": "display"
                     }
                 },
                 {
                     "header": {
-                        "prompt": "Last name"
+                        "prompt": "Last name",
+                        "type": "header"
                     },
                     "data": {
-                        "property": "last_name"
+                        "property": "last_name",
+                        "type": "display"
                     }
                 }
             ]
@@ -133,9 +136,9 @@
     };
 
     vm.getData = function (name) {
-        if(name == "edit_user") {
+        if (name == "edit_user") {
             return editUserSpec;
-        } else if(name == "list_user") {
+        } else if (name == "list_users") {
             return listUserSpec;
         }
     };

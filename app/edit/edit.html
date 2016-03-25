@@ -1,0 +1,9 @@
+<div ng-repeat="spec in edit.specs.templates">
+    <div>
+        <div field-directive field="spec" model="edit.model[spec.property]" form="'user'"></div>
+    </div>
+</div>
+<div style="padding-top: 10px">
+    <input type="button" ng-click="main.save()" value="save"/>
+</div>
+

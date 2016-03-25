@@ -11,6 +11,10 @@
                     return 'components/field-directive/text-field.html';
                 case 'list':
                     return 'components/field-directive/list-field.html';
+                case 'display':
+                    return 'components/field-directive/display-field.html';
+                case 'header':
+                    return 'components/field-directive/header-field.html';
                 default:
                     return console.log("Type not recognized!");
             }

@@ -1,0 +1,20 @@
+<table>
+    <thead>
+    <tr>
+        <td ng-repeat="field in list.specs.template.fields">
+            <div field-directive field="field.header" model="user[spec.data.property]"></div>
+        </td>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in list.model">
+        <td ng-repeat="spec in list.specs.template.fields">
+            <div>
+                <div field-directive field="spec.data" model="user[spec.data.property]"></div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+

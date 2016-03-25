@@ -2,9 +2,9 @@
 
     'use strict';
 
-    var injectParams = ['$resource', "URLS"];
+    var injectParams = ['$resource', '$log', "URLS"];
 
-    var factory = function ($resource, URLS) {
+    var factory = function ($resource, $log, URLS) {
 
         var UiConfig = $resource(URLS.api.ui_config, {}, {
             get: {method: 'GET', params: {name: '@name'}},
@@ -18,6 +18,7 @@
         };
 
         vm.load = function (name) {
+            $log.debug("Loading name: " + name);
             return UiConfig.get({name: name});
         };
 

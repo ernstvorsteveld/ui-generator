@@ -46,7 +46,8 @@
         var userFound = {};
         angular.forEach(vm.getData(), function (user) {
             if (user.id === id) {
-                console.log("found user: " + user);
+                console.log("found user: ");
+                console.log(user);
                 userFound = user;
             }
         });
@@ -59,6 +60,11 @@
             var id = regex.exec(url)[1]; // First match on the second item.
             var user = vm.getById(id);
             return [200, user];
+        });
+
+        $httpBackend.whenGET(/^\/api\/users/).respond(function (method, url, data, headers) {
+            var users = vm.getData();
+            return [200, users];
         });
 
         $httpBackend.whenPOST(/^\/api\/users\/\w+$/).respond(function (method, url, data, headers) {

@@ -7,18 +7,29 @@
     app.constant("URLS", {
         "api": {
             "ui_config": '/api/ui/config/:name',
-            "users" : "/api/users/:id"
+            "users": "/api/users/:id"
         }
     });
 
     app.config(['$routeProvider', "URLS", function ($routeProvider) {
         $routeProvider
-            .when('/main', {
-                controller: 'MainController',
-                templateUrl: 'main/main.html',
-                controllerAs: 'main'
+            .when('/index', {
+                controller: 'IndexController',
+                templateUrl: 'index/index.html',
+                controllerAs: 'index'
             })
-            .otherwise({redirectTo: '/main'});
+            .when('/edit', {
+                controller: 'EditController',
+                templateUrl: 'edit/edit.html',
+                controllerAs: 'edit'
+            })
+            .when('/list', {
+                controller: 'ListController',
+                templateUrl: 'list/list.html',
+                controllerAs: 'list'
+            })
+            .otherwise({redirectTo: '/index'});
+
     }]);
 
 }());
